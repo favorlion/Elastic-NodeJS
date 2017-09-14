@@ -1,0 +1,401 @@
+
+<% include ../../html/html_begin %>
+<% include ../../html/head_begin %>
+<% include ../../html/head_end %>
+<% include ../../html/body_begin %>
+    <% include ../../components/topbar %>
+    <% include ../../components/site_menubar %>
+			<!-- ============================================================== -->
+			<!-- Start right Content here -->
+			<!-- ============================================================== -->
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<div class="container">
+
+						<!-- Page-Title -->
+						<div class="row">
+							<div class="col-sm-12">
+                                <div class="btn-group pull-right m-t-15">
+                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Settings <span class="m-l-5"><i class="fa fa-cog"></i></span></button>
+                                    <ul class="dropdown-menu drop-menu-right" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+								<h4 class="page-title" id = "linkTitle">A third saved search</h4>
+								
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="col-sm-9">
+								<div class="card-box">
+									<h4 class="m-t-0 m-b-20 header-title"> <b>Alert</b> 
+                                        <span>
+                                            
+                                                <input type="checkbox" data-plugin="switchery" data-color="#f05050" class = "switch"/>
+                                               
+                                        </span>
+                                    </h4>
+									<!-- Keywords -->
+									<div class="row top30">										
+										<div class="col-sm-12 col-xs-offset-1">
+
+                                            <div class = "col-xs-1 col-sm-1">
+											    <h5><b>Keywords</b></h5>
+											</div>
+                                            <div class = "clearfix visible-xs-block"> </div>
+											<div class="m-b-0 col-xs-9 col-sm-9">
+												<select multiple data-role="tagsinput" id = "keywordSelect">
+													
+												</select>
+											</div>
+
+										</div>										
+									</div><!-- Keywords  End -->
+                                    <!-- =========================== -->
+                                    <!--  Category  -->
+
+                                   <div class="row top30">										
+										<div class="col-sm-12 col-xs-offset-1">
+
+                                            <div class = "col-xs-1 col-sm-1">
+											    <h5><b>Category</b></h5>
+											</div>
+                                            <div class = "clearfix visible-xs-block"> </div>
+											<div class="m-b-0 col-xs-9 col-sm-9">
+												<select multiple data-role="tagsinput" id = "categorySelect">
+													<!--<option value="Amsterdam">Amsterdam</option>
+													<option value="Washington">Washington</option>
+													<option value="Sydney">Sydney</option> -->
+												</select>
+											</div>
+
+										</div>										
+									</div><!--  Category End -->
+                                    <!-- =========================== -->
+                                    <!--  Date  -->
+
+                                   <div class="row top30">										
+										<div class="col-sm-12 col-xs-offset-1">
+                                            <div class = "col-xs-1 col-sm-1">
+											    <h5><b>Date</b></h5>
+											</div>
+                                            <div class = "clearfix visible-xs-block"> </div>
+                                            <div class="col-sm-8">
+                                                <div class="input-daterange input-group" id="date-range">
+                                                    <input type="text" class="form-control" name="start" id = "startDateInputField"/>
+                                                    <span class="input-group-addon bg-custom b-0 text-white">to</span>
+                                                    <input type="text" class="form-control" name="end" id = "endDateInputField"/>
+                                                </div>
+                                            </div>
+                                            <!--<form action="#" class="form-horizontal">
+			                                		
+			                                		
+												</form> -->
+
+										</div>										
+									</div><!--  Date End -->
+                                    <!-- =========================== -->
+                                    <!--  Source  -->
+
+                                    <div class="row top30">										
+										<div class="col-sm-12 col-xs-offset-1">
+
+                                            <div class = "col-xs-1 col-sm-1">
+											    <h5><b>Source</b></h5>
+											</div>
+                                            <div class = "clearfix visible-xs-block"> </div>
+											<div class="m-b-0 col-xs-9 col-sm-9">
+												<select multiple data-role="tagsinput" id = "sourceSelect">
+													
+												</select>
+											</div>
+
+										</div>										
+									</div><!--  Source End -->
+                                    <!-- =========================== -->
+                                    <!--  Submit Buttons  -->
+
+                                    <div class="row top60">										
+										<div class="col-sm-12 col-xs-offset-1">
+
+                                            <div class = "col-xs-1 col-sm-1">
+											    <h5><b></b></h5>
+											</div>
+                                            <div class = "clearfix visible-xs-block"> </div>
+											<div class="m-b-0 col-xs-9 col-sm-9">
+												<button type="button" class="btn btn-primary waves-effect waves-light" id = "linkDataSaveButton" >Submit</button>
+                                                <button type="button" class="btn btn-default waves-effect waves-light">Cancel</button>
+											</div>
+
+										</div>										
+									</div><!--  Source End -->
+
+								</div>
+							</div>
+						</div>
+						    
+            		</div> <!-- container -->
+                               
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2017. All rights reserved.
+                </footer>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar nicescroll">
+                <h4 class="text-center">Chat</h4>
+                <div class="contact-list nicescroll">
+                    <ul class="list-group contacts-list">
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-1.jpg" alt="">
+                                </div>
+                                <span class="name">Chadengle</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-2.jpg" alt="">
+                                </div>
+                                <span class="name">Tomaslau</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-3.jpg" alt="">
+                                </div>
+                                <span class="name">Stillnotdavid</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-4.jpg" alt="">
+                                </div>
+                                <span class="name">Kurafire</span>
+                                <i class="fa fa-circle online"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-5.jpg" alt="">
+                                </div>
+                                <span class="name">Shahedk</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-6.jpg" alt="">
+                                </div>
+                                <span class="name">Adhamdannaway</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-7.jpg" alt="">
+                                </div>
+                                <span class="name">Ok</span>
+                                <i class="fa fa-circle away"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-8.jpg" alt="">
+                                </div>
+                                <span class="name">Arashasghari</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-9.jpg" alt="">
+                                </div>
+                                <span class="name">Joshaustin</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="avatar">
+                                    <img src="../assets/images/users/avatar-10.jpg" alt="">
+                                </div>
+                                <span class="name">Sortino</span>
+                                <i class="fa fa-circle offline"></i>
+                            </a>
+                            <span class="clearfix"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+            
+            
+        <% include ../../components/footer %>
+<% include ../../html/body_end %>
+<script language = "JavaScript" >
+
+                var linkId;
+
+                // $('#keywordSelect').tagsinput({
+                //     allowDuplicates: false,
+                //     itemValue: 'id',
+                //     itemText: 'label'
+                // });
+
+                window.onload = function() {
+
+                    linkId = window.location.hash.substring(1);
+
+                    console.log("link id is : " + linkId);
+
+                    var title =  localStorage.getItem('link');
+                    console.log("link title : " + title);
+
+                    document.getElementById('linkTitle').innerHTML = title;
+
+                    var param = {
+                        "linkid": linkId
+                    };
+
+                    $.ajax({
+                        type:'POST',
+                        data: JSON.stringify(param),
+                        contentType:'application/json',
+                        url:'/pages/links/get',
+                        error: function(error) {
+                            alert("error is occurred=="+error);
+                        },
+                        dataType:'json',
+                        success: function(data) {
+
+                            console.log(data);
+                            displayLinkInfo(data);
+                        },
+                    });
+
+
+
+                };
+
+                function displayLinkInfo(data) {
+
+                    $.each(data.keywords, function(index, value){
+                        $('#keywordSelect').tagsinput('add',value);
+                    });
+                    $.each(data.categories, function(index, value){
+                        $('#categorySelect').tagsinput('add',value);
+                    });
+                    $.each(data.sources, function(index, value){
+                        $('#sourceSelect').tagsinput('add',value);
+                    });
+
+                    var from = moment(new Date(data.start_date)).format("MM/DD/YYYY");
+                    var to = moment(new Date(data.end_date)).format("MM/DD/YYYY");
+
+
+                    $('#startDateInputField').val(from.toString());
+                    $('#endDateInputField').val(to.toString());
+                    console.log(data.alert);
+                    // $('.switch').trigger('click');
+
+                    changeSwitcheryState($('.switch'), data.alert);
+                    
+                 }
+
+                 function changeSwitcheryState(el,value){
+                    if($(el).is(':checked')!=value){
+                        $(el).trigger("click")
+                    }
+                }
+                
+                 $(document).ready(function(){
+                    $('#linkDataSaveButton').click(function(){
+                         var keywordValues = $('#keywordSelect').val() || [];
+                        var categoryValues = $('#categorySelect').val()  || [];
+                        var sourceValues = $('#sourceSelect').val()  || [];
+                        var startDate = $('#startDateInputField').val() || new Date();
+                        var endDate = $('#endDateInputField').val() || new Date();
+                        var alert = false;
+                        if ($('.switch').is(':checked')) {
+                            alert = true;
+                        }
+
+                        console.log(alert);
+
+                        if (keywordValues.length == 0 && categoryValues.length == 0 && sourceValues.length == 0 && !startDate && !endDate) {
+
+                            console.log("Please input one field at least.");
+                            return;
+                        }
+
+                        var parameter = {
+
+                            "id": linkId,
+                            "keywords": keywordValues,
+                            "categories": categoryValues,
+                            "sources": sourceValues,
+                            "start_date": startDate,
+                            "end_date": endDate,
+                            "alert": alert
+                        };
+
+                        console.log("parameter id is ::::::" + JSON.stringify(parameter));
+                        $.ajax({
+                            type:'POST',
+                            data: JSON.stringify(parameter),
+                            contentType:'application/json',
+                            url:'/pages/newlink/update',
+                            error: function(error) {
+                                alert("error is occurred=="+error);
+                            },
+                            dataType:'json',
+                            success: function(data) {
+
+                                console.log(data);
+                                window.location.href = '/pages/links';
+                            },
+                        });
+                    });
+
+                   
+                 });
+
+            </script>    
+<% include ../../html/html_end %>

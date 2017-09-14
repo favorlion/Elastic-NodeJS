@@ -1,0 +1,29 @@
+{
+    "name": "elastic",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/elastic"
+    },
+    "dependencies": {
+        "async": "^2.1.4",
+        "bcryptjs": "^2.4.0",
+        "body-parser": "~1.15.2",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.2.0",
+        "ejs": "~2.5.2",
+        "email-verification": "^0.4.5",
+        "express": "~4.14.0",
+        "express-flash": "0.0.2",
+        "express-session": "~1.14.2",
+        "moment": "^2.17.1",
+        "mongoose": "4.0.8",
+        "morgan": "~1.7.0",
+        "node.extend": "^1.1.6",
+        "nodemailer": "^2.6.4",
+        "passport": "^0.3.2",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "1.0.1",
+        "serve-favicon": "~2.3.0"
+    }
+}
